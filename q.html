@@ -1,0 +1,39 @@
+
+<?php
+
+$con=mysqli_connect("localhost","user","","test");
+$sql = 'SELECT * FROM question';
+if (!$sql){
+echo 'could not connect' . mysqli_error();
+exit;
+}
+
+$result = mysqli_query($con,$sql);
+if (!$result) {
+    echo 'Could not run query: ' . mysqli_error();
+    exit;
+}
+
+$rows = mysqli_num_rows(mysqli_query($con, "SELECT * from question"));
+while($row=mysqli_fetch_assoc($result)) {
+
+echo "$row[SNO] - $row[question] <br>";
+}
+?>
+<!--
+<form>
+Your Answer: <input type="text" name="answer"><br>
+</form>
+
+<?php
+$ans=answer
+$query = mysql_query(SELECT answer FROM question);
+$result = mysql_fetch_assoc($query);
+
+if(strcmp($result['answer'],"ans")==0)
+{
+        $score=$score+1;
+}
+echo '$score';
+?>
+-->

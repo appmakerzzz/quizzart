@@ -1,0 +1,26 @@
+def bin(x):
+ t=x
+ c=0
+ j=0
+ while(t>0):
+  r=t%2
+  t=int(t/2)
+  j=j+1
+  c=c+r*pow(10,j-1)
+ return c*9
+
+y=input()
+y=int(y)
+for j in range(y):
+ p=1
+ p=int(p)
+ for i in range(1,50001):
+   
+   m=bin(i)
+   
+   if m%p==0:
+       print m
+       break
+ p+=1
+
+

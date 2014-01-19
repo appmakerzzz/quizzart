@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<title>TEACHER SECTION</title>
+	<link rel="stylesheet" type="text/css" href="./teacher.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+      
+                 var x=document.getElementById("demo");
+                
+      
+       x.innerHTML="<a href='./index'>surely Want to logout.. click here</a>"
+      
+          });
+});
+</script>
+
+</head>
+<body >
+	<p id="welcome">
+	Welcome Teacher
+    </p> 
+  <button>LOGOUT</button>
+  <a href="display.php" >Student Stats</a>
+  <p id="demo"></p>
+  
+	<div id="box">
+		
+		<form action="insert.php" method="post">
+		<div id="ques">  
+		Question number:<br/><br/>
+		<input type="text" name="SNO"><br/><br/>
+		
+                Please enter question:<br/><br/>
+                <input type="text" name="question"><br/><br/>
+		</div>
+		<hr/>
+		<div id="ans">
+		Correct answer:<br/><br/>
+		<input type="text" name="answer">
+		</div>
+		<hr/>
+		<input id="sub" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

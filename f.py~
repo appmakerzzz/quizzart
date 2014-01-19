@@ -1,0 +1,27 @@
+
+c=0
+f=0
+j=1
+r=317
+ 
+while(1):
+     r=r+10*j
+     d=r
+     print r
+    
+     while(d > 0 and c==0):
+         t=d%10
+         if(t==9 or t==0):
+             d=d/10
+         else:
+            c=1
+            break
+     if d==0:
+          print "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+          print r 
+          break
+     j=j+1      
+ 
+ 
+ 
+       

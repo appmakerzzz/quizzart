@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+	<title>TEACHER SECTION</title>
+	<link rel="stylesheet" type="text/css" href="./teacher.css">
+        <script type="text/javascript"></script>
+</head>
+<body background=./teach.jpg >
+	<p id="welcome">
+	Welcome Teacher
+    </p>  
+	<div id="box">
+		
+		<form action="insert.php" method="post">  
+		Question number:<br/><br/>
+		<input type="text" name="no"><br/><br/>
+		<hr/>
+                Please enter question:<br/><br/>
+                <input type="text" name="ques"><br/><br/>
+		<!--<textarea id="x" rows="4" cols="80"></textarea>-->
+		<hr/>
+		Correct answer:<br/><br/>
+		<input type="text" name="correct">
+		<hr/>
+		<input type="submit">
+		</form>
+	</div>
+	
+	<div id="but">
+		<button  type="next">Next</button>
+		
+	</div>
+</body>
+</html>

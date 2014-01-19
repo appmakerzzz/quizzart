@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+  {
+   long long int n,m,T,j,i;
+    scanf("%lld",&T);
+     while(T--)
+    {  long long int s=1,t=1;
+     scanf("%lld%lld",&m,&n);
+      for(i=m+n;i>=n+1;i--)
+        s=((s%1000000007)*i)%(1000000007);
+      for(j=1;j<=m;j++)
+        t=((t%1000000007)*j)%1000000007;
+      printf("%lld\n",(s/t)%1000000007);
+    }
+   return 0;
+}

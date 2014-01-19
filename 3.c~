@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{  unsigned long long int i,j,n,c,m,t,r;
+    
+    
+     
+     
+        r=317;i=317*100000000;
+     for(j=100000000;;j=j+10)
+          {   
+              r=317*j;
+              print r
+              m=r;
+              
+             for(c=0;m>0&&c==0;)
+              {  t=m%10;
+                  if(t==0||t==9)
+                   {m=m/10;}
+                  else
+                     c=1;
+               }
+              if(c==0)
+                { printf("a[%llu]=%llu;\n",i,r);
+                  break;
+                 }
+            }
+     
+ return 0;
+}

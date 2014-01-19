@@ -1,0 +1,23 @@
+<style>
+.header
+{
+        text-align:center;
+}
+.body
+{
+	background-image:url('./credit.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	width:100%;
+	text-align:center;
+}
+
+#container
+{
+	height:20%;
+}
+#a
+{
+	float:center;
+}
+</style>

@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+long long int function(long long int n,long long int r)
+{
+        long long int x;
+
+        static long long int checker[50000][50000];
+
+        if(r==0||n==r)
+           return 1;
+
+        if(checker[n][r])
+              return checker[n][r]%1000000007;
+
+        x=function(n-1,r-1)+function(n-1,r);
+        checker[n][r]=x;
+        return x%1000000007;
+
+}
+int main()
+{
+        long long int i,t,n,r,k,z;
+
+        scanf("%lld",&t);
+
+        for(i=0;i<t;i++)
+        {
+                scanf("%lld %lld",&n,&r);
+
+                if(r>n)
+                       { z=r;r=n;n=z;}
+                k=function(n+r-2,r-1);
+                printf("%lld\n",k);
+
+        }
+        return 0;
+}
+
